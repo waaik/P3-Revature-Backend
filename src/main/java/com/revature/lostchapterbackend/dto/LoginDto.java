@@ -7,6 +7,7 @@ public class LoginDto {
 	private String username;
 	private String password;
 
+
 	public LoginDto() {
 		super();
 	}
@@ -52,7 +53,7 @@ public class LoginDto {
 
 	@Override
 	public String toString() {
-		return "LoginDto [ausername=" + username + ", password=" + password + "]";
+		return "LoginDto [username=" + username + ", password=" + password + "]";
 	}
 
 }

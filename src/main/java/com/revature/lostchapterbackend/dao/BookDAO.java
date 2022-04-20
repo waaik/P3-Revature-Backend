@@ -11,7 +11,7 @@ import com.revature.lostchapterbackend.model.Book;
 
 public interface BookDAO extends JpaRepository<Book, Integer> {
 
-	@Query("SELECT b FROM Book b WHERE b.genre.id = :genreId")
+	@Query("SELECT b FROM Book b WHERE b.genre.Id = :genreId")
 	public List<Book> getByGenreId(int genreId);
 
 	public List<Book> findBybookNameIgnoreCaseContaining(String keyword);
